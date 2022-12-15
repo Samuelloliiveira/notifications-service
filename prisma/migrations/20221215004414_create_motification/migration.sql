@@ -1,7 +1,7 @@
 -- CreateTable
 CREATE TABLE "Notification" (
     "id" TEXT NOT NULL PRIMARY KEY,
-    "recipentId" TEXT NOT NULL,
+    "recipientId" TEXT NOT NULL,
     "content" TEXT NOT NULL,
     "category" TEXT NOT NULL,
     "readAt" DATETIME,
@@ -9,4 +9,4 @@ CREATE TABLE "Notification" (
 );
 
 -- CreateIndex
-CREATE INDEX "Notification_recipentId_idx" ON "Notification"("recipentId");
+CREATE INDEX "Notification_recipientId_idx" ON "Notification"("recipientId");
